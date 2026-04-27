@@ -15,6 +15,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: '01',
+    slug: 'nike-x-yu-gi-oh',
+    title: 'NIKE X YU-GI-OH!',
+    client: '.SWOOSH',
+    year: '2025',
+    tags: ['3D Design', 'Game Design', 'Web3'],
+    coverImage: '/images/01-yu-gi-oh-cover.jpg',
+    images: [
+      '/images/yugioh-project-shot-2.jpg',
+      '/videos/01-muscle-exp-study-1-L.mp4',
+      '/images/yugioh-project-shot-4.jpg',
+      ['/videos/01-muscle-exp-study-6-L_1.mp4', '/images/yugioh-project-shot-6.jpg'],
+    ],
+    description: 'An immersive campaign experience bringing the Nike x Yu-Gi-Oh! collection to life.',
+    longDescription: 'We designed an immersive campaign experience to bring the Nike x Yu-Gi-Oh! collection to life, highlighting each piece while celebrating the legacy behind it.\n\nThe journey began inside a playing card, where users explored the hero product—the Nike Air Max 95 QS YGO \'Joey.\' From there, the experience transported users through the card to discover the rest of the collection, styled on a Yu-Gi-Oh!-inspired character.\n\nTo extend the activation beyond digital, we also created a 3D billboard that amplified the campaign\'s impact in the physical world.',
+    nextProject: '02',
+  },
+  {
     id: '02',
     slug: 'snkrs-reserve',
     title: 'SNKRS Reserve',
@@ -32,24 +50,6 @@ export const projects: Project[] = [
     description: 'After scaling pre-order to SNKRS as the Reserve program, we turned our focus to brand identity, building meaningful connections between brand design and the in-app experience.',
     longDescription: 'After scaling pre-order to SNKRS as the Reserve program, we turned our focus to brand identity, building meaningful connections between brand design and the in-app experience. The new branding brings a sense of exclusivity and premium feel to the feature, with a visual system flexible enough to support broader Nike brand activations.',
     nextProject: '03',
-  },
-  {
-    id: '01',
-    slug: 'nike-x-yu-gi-oh',
-    title: 'NIKE X YU-GI-OH!',
-    client: '.SWOOSH',
-    year: '2025',
-    tags: ['3D Design', 'Game Design', 'Web3'],
-    coverImage: '/images/01-yu-gi-oh-cover.jpg',
-    images: [
-      '/images/yugioh-project-shot-2.jpg',
-      '/videos/01-muscle-exp-study-1-L.mp4',
-      '/images/yugioh-project-shot-4.jpg',
-      ['/videos/01-muscle-exp-study-6-L_1.mp4', '/images/yugioh-project-shot-6.jpg'],
-    ],
-    description: 'An immersive campaign experience bringing the Nike x Yu-Gi-Oh! collection to life.',
-    longDescription: 'We designed an immersive campaign experience to bring the Nike x Yu-Gi-Oh! collection to life, highlighting each piece while celebrating the legacy behind it.\n\nThe journey began inside a playing card, where users explored the hero product—the Nike Air Max 95 QS YGO \'Joey.\' From there, the experience transported users through the card to discover the rest of the collection, styled on a Yu-Gi-Oh!-inspired character.\n\nTo extend the activation beyond digital, we also created a 3D billboard that amplified the campaign\'s impact in the physical world.',
-    nextProject: '02',
   },
   {
     id: '03',
