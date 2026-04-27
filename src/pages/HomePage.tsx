@@ -617,7 +617,7 @@ export default function HomePage() {
               Info
             </a>
             <a
-              href="mailto:hello@franchec.com"
+              href="mailto:francheccrespo@gmail.com"
               className="hidden md:inline"
               style={{
                 color: '#fff',

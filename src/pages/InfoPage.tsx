@@ -164,7 +164,7 @@ export default function InfoPage() {
           {/* Contact link */}
           <div data-animate style={{ opacity: 0 }}>
             <a
-              href="mailto:hello@franchec.com"
+              href="mailto:francheccrespo@gmail.com"
               style={{
                 fontSize: '12px',
                 fontWeight: 600,

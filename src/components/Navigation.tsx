@@ -44,7 +44,7 @@ export default function Navigation({ theme = 'light', showCenteredName = false }
           INFO
         </a>
         <a
-          href="mailto:hello@franchec.com"
+          href="mailto:francheccrespo@gmail.com"
           className="uppercase hover:underline transition-all hidden md:inline"
         >
           CONTACT
