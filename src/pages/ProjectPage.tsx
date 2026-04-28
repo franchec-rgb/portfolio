@@ -313,6 +313,7 @@ export default function ProjectPage() {
               color: 'rgba(0,0,0,0.5)',
               marginBottom: 12,
               textTransform: 'uppercase',
+              textAlign: 'right',
             }}
           >
             NEXT PROJECT
