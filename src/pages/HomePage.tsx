@@ -470,6 +470,7 @@ export default function HomePage() {
     }
     const move = (e: PointerEvent) => {
       if (!pointerDown) return
+      e.preventDefault()
       const d = dimsRef.current
       const pos = d.mobile ? e.clientX : e.clientY
       if (!dragging.current) {
@@ -489,7 +490,7 @@ export default function HomePage() {
       lastInputTime.current = performance.now()
     }
     window.addEventListener('pointerdown', down)
-    window.addEventListener('pointermove', move)
+    window.addEventListener('pointermove', move, { passive: false })
     window.addEventListener('pointerup', up)
     window.addEventListener('pointercancel', up)
     return () => {
@@ -510,6 +511,7 @@ export default function HomePage() {
         overflow: 'hidden',
         cursor: 'grab',
         userSelect: 'none',
+        touchAction: 'none',
       }}
     >
       {/* FRANCHEC intro text */}
