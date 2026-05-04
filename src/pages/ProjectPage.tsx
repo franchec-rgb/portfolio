@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { gsap } from 'gsap'
 import Navigation from '@/components/Navigation'
 import { getProjectById, getNextProject } from '@/data/projects'
+import { useDocumentMeta } from '@/hooks/useDocumentMeta'
 
 export default function ProjectPage() {
   const { id } = useParams<{ id: string }>()
@@ -13,6 +14,12 @@ export default function ProjectPage() {
 
   const project = id ? getProjectById(id) : undefined
   const nextProject = project ? getNextProject(project.nextProject) : undefined
+
+  useDocumentMeta({
+    title: project ? `${project.title} — Franchec Crespo` : 'Project not found — Franchec Crespo',
+    description: project?.description,
+    canonical: project ? `https://franchec.com/project/${project.slug}` : undefined,
+  })
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })

@@ -1,8 +1,15 @@
 import { useEffect, useRef, useCallback } from 'react'
 import { gsap } from 'gsap'
 import Navigation from '@/components/Navigation'
+import { useDocumentMeta } from '@/hooks/useDocumentMeta'
 
 export default function InfoPage() {
+  useDocumentMeta({
+    title: 'About — Franchec Crespo',
+    description: 'Design leader based in LA. 18+ years across Nike SNKRS, .SWOOSH, Apple, and Critical Mass. Working at the intersection of product design, brand, and immersive experiences.',
+    canonical: 'https://franchec.com/info',
+  })
+
   const contentRef = useRef<HTMLDivElement>(null)
   const redOffsetRef = useRef<SVGFEOffsetElement>(null)
   const blueOffsetRef = useRef<SVGFEOffsetElement>(null)

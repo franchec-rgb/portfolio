@@ -4,6 +4,7 @@ import * as THREE from 'three'
 import { gsap } from 'gsap'
 import { projects } from '@/data/projects'
 import { usePageTransition } from '@/context/TransitionContext'
+import { useDocumentMeta } from '@/hooks/useDocumentMeta'
 
 const TOTAL = projects.length
 const CARD_GAP = 14
@@ -66,6 +67,12 @@ let introHasPlayed = false
 let savedActiveIdx: number | null = null
 
 export default function HomePage() {
+  useDocumentMeta({
+    title: 'Franchec Crespo — Product Design Director & Creative Lead | Portfolio',
+    description: 'Design leader based in LA. Working at the intersection of product design, brand, and immersive experiences. Currently Product Design Director at Nike.',
+    canonical: 'https://franchec.com/',
+  })
+
   const { triggerTransition } = usePageTransition()
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const canvasWrapRef = useRef<HTMLDivElement>(null)

@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom'
 import Navigation from '@/components/Navigation'
+import { useDocumentMeta } from '@/hooks/useDocumentMeta'
 
 export default function NotFoundPage() {
+  useDocumentMeta({
+    title: 'Page not found — Franchec Crespo',
+  })
+
   return (
     <div
       style={{
